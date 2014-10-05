@@ -22,3 +22,8 @@ group :test do
 	gem 'selenium-webdriver', '2.43.0'
 	gem 'capybara', '2.4.3'
 end
+
+group :production do
+	gem 'pg'
+	gem 'rails_12factor'
+end
