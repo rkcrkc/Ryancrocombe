@@ -1,0 +1,243 @@
+@import url(http://fonts.googleapis.com/css?family=Raleway:400,300);
+
+/* BASE STYLES ====================== */
+
+$font-family-sans-serif: "Raleway", Helvetica, sans-serif;
+
+/*----------------------------------------------------------------------------- 
+1. BASE STYLES  
+-----------------------------------------------------------------------------*/
+.clear {
+	clear: both;
+}
+
+.align-right {
+	float: right;
+}
+
+.align-left {
+	float: left;
+}
+
+.divider {
+	height: 1px;
+	width: 45%;
+	border-color: silver;
+	margin: 0 auto;
+}
+
+/*----------------------------------------------------------------------------- 
+2. SECTION ELEMENTS  
+-----------------------------------------------------------------------------*/
+
+.pagecontainer /* Body container */{
+	margin: 0 auto 0 auto;
+}
+
+.section {
+	margin: 0 auto;
+	padding: 20px 0;
+}
+
+#bannercontainer {
+	background-color: #FD6B57;
+}
+
+#banner {
+	max-width: 800px;
+	margin: 0 auto 0 auto;
+	padding: 5px 0px 20px 0px;
+	color: white;
+}
+
+#banner .divider {
+	border-color: white;
+	width: 80%;
+}
+
+.profilepic {
+	border-radius: 50%;
+	max-height: 200px;
+	max-width: 200px;
+	margin-top: 30px;
+	margin-left: 85px;
+	border: 2px solid white;
+}
+
+#social /* Social media icons */{
+	width: 180px;
+	margin: 25px auto 10px auto;
+	text-decoration: none;
+}
+
+#social img {
+	height: 35px;
+}
+
+#social img:hover {
+	opacity: 0.8;
+}
+
+#intro {
+	max-width: 800px;
+	margin: 0 auto;
+}
+
+#ventures {
+	max-width: 800px;
+	margin: 0 auto;
+}
+
+#aboutme {
+}
+
+#bucketlist {
+	max-width: 800px;
+	margin: 0 auto;
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-bottom: 40px;
+}
+
+#contactcontainer {
+	background-color: #FD6B57;
+}
+
+#contact {
+	max-width: 800px;
+	margin: 0 auto;
+	padding-bottom: 50px;
+}
+
+#contactpic {
+	border-radius: 50%;
+	height: 250px;
+	width: 250px;
+	border: 3px solid white;
+	margin: 15px 0 35px 0;
+}
+
+#contact #social {
+	margin-top: 45px;
+}
+
+#contact #social img {
+	height: 40px;
+}
+
+footer {
+	background: url(.../images/footer_lodyas.png);
+	width: 100%;
+	padding: 40px 50px 50px 50px;
+}
+
+footer p {
+	font-size: 16px;
+	color: #FD6B57;
+}
+
+footer a {
+	margin-bottom: 0;
+}
+
+footer a:hover {
+	text-decoration: none;
+}
+
+/*----------------------------------------------------------------------------- 
+3. CAROUSEL  
+-----------------------------------------------------------------------------*/
+
+/* === Carousel fade effect === */
+.carousel-fade .item {
+	-webkit-transition: opacity 1.5s;
+	 -moz-transition: opacity 1.5s;
+	  -ms-transition: opacity 1.5s;
+	   -o-transition: opacity 1.5s;
+	    transition: opacity 1.5s;}
+
+.carousel-fade .active.left {
+	left:0;
+	opacity:0;
+	z-index:2;
+}
+
+.carousel-fade .next {
+	left:0;
+	opacity:1;
+	z-index:1;
+}
+
+/* === Carousel arrows === */
+
+.carousel-control {
+  color: black;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0);
+  filter: alpha(opacity=50);
+  opacity: .5;
+}
+.carousel-control:hover,
+.carousel-control:focus {
+  color: black;
+  text-decoration: none;
+  filter: alpha(opacity=90);
+  outline: none;
+  opacity: .7;
+}
+
+/* Edits side panel behind arrows i.e. gradient panel */
+.carousel-control.left {
+	background-image: none;}
+.carousel-control.right {
+	background-image: none;
+}
+/* === End of carousel arrows === */
+
+/*----------------------------------------------------------------------------- 
+4. BACKGROUND PANELS  
+-----------------------------------------------------------------------------*/
+
+.aboutme-row {
+}
+
+.aboutme-panel-top {
+	width: 240px;
+	height: 550px;
+	margin: 30px 30px;
+	display: inline-block;
+	position: relative;
+}
+
+.aboutme-panel-bottom {
+	width: 240px;
+	height: 520px;
+	margin: 30px 30px;
+	display: inline-block;
+	position: relative;
+}
+
+.aboutme-panel-container {
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+
+.aboutme-panel-content {
+}
+
+.aboutme-pic {	
+	border-radius: 50%;
+	height: 240px;
+	width: 240px;
+	margin-bottom: 10px;
+}
+
+
+/* Box Model Hack */
+* {
+     -moz-box-sizing: border-box; /* Firexfox */
+     -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+     box-sizing: border-box; /* IE */
+}
+
+@import 'bootstrap';

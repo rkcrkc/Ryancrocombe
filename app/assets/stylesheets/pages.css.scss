@@ -1,0 +1,92 @@
+// Place all the styles related to the pages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+p, a {
+	text-decoration: none;
+}
+
+a:hover, a:visited, a:link, a:active {
+	text-decoration: none;
+}
+
+body {
+	text-align: center;
+}
+
+h1 /* Banner title */{
+	font-size: 65px;
+	letter-spacing: 7px;
+	text-align: center;
+	color: white;
+}
+
+h2  /* Section title text */{
+	font-size: 45px;
+	line-height: 1.5;
+	margin: 0;
+	padding: 12px 18px 20px 18px;
+	text-align: center;
+	color: #FD6B57;
+	letter-spacing:3px;
+}
+
+h3  /* Bucket list text */{
+	font-size: 28px;
+	font-weight: 300;
+	line-height: 1.5;
+	letter-spacing: 3px;
+	color: #FD6B57;
+}
+
+h4 /* "Passionate about..." text */{
+	font-size: 35px;
+	font-weight: 300;
+	line-height: 1.5;
+	margin: 0;
+	padding: 12px 18px 28px 18px;
+	text-align: center;
+	color: #FD6B57;
+}
+
+h5 /* Text for startup industries */{
+	font-size: 35px;
+	font-weight: 400;
+	line-height: 1.5;
+	letter-spacing: 4px;
+	text-transform: uppercase;
+	margin: 10px 0 0 0;
+	text-align: center;
+	color: #318CE7;
+}
+
+h6 /* Text for aboutme titles */{
+	font-weight: 300;
+	font-size: 35px;
+	margin: 10px 0 20px 0;
+	color: #FD6B57;
+}
+
+p /* Regular content */{
+	font-size: 20px;
+	font-weight: 300;
+	line-height: 1.5;
+	text-align: justify;
+}
+
+
+.aboutme-panel-content p {
+	font-weight: 300;
+	text-align: center;
+}
+
+#aboutme p {
+	font-size: 18px;
+}
+
+#contact p {
+	color: white;
+	text-align: center;
+	font-weight: 300;
+	font-size: 21px;
+}

@@ -1,0 +1,44 @@
+<div id="bannercontainer"><!-- BANNER -->
+  <div id="banner">
+    <div class="row">
+      <div class="col-md-4">
+        <%= image_tag "ryan-hk.JPG", class: "profilepic" %>
+      </div>
+
+      <div class="col-md-8">
+        <h1>
+          Ryan Crocombe
+        </h1>
+
+      <hr class="divider">
+
+      <%= render 'socialmedia' %>
+
+      </div>
+    </div>
+  </div>                  
+</div><!-- /BANNER -->
+
+
+<div class="pagecontainer">
+
+	<%= render 'intro' %>
+	<hr class="divider">
+	<%= render 'ventures' %>
+	<hr class="divider">
+	<%= render 'cv' %>
+	<hr class="divider">
+	<%= render 'bucketlist' %>
+	<%= render 'outro' %>
+</div>
+
+<footer><!-- FOOTER -->
+    <div class="align-left">
+      <a href="#banner"><p>Back to top</p></a>
+    </div>
+    <div class="align-right">
+      <p>RyanCrocombe.com | 2015</p>
+    </div>
+</footer><!-- /FOOTER -->
+
+
