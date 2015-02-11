@@ -44,7 +44,7 @@ $font-family-sans-serif: "Raleway", Helvetica, sans-serif;
 }
 
 #banner {
-	max-width: 680px;
+	max-width: 650px;
 	margin: 0 auto 0 auto;
 	padding: 5px 0px 20px 0px;
 	color: white;
@@ -127,7 +127,7 @@ $font-family-sans-serif: "Raleway", Helvetica, sans-serif;
 footer {
 	background: url(.../images/footer_lodyas.png);
 	width: 100%;
-	padding: 40px 50px 50px 50px;
+	padding: 25px 40px;
 }
 
 footer p {
@@ -144,56 +144,7 @@ footer a:hover {
 }
 
 /*----------------------------------------------------------------------------- 
-3. CAROUSEL  
------------------------------------------------------------------------------*/
-
-/* === Carousel fade effect === */
-.carousel-fade .item {
-	-webkit-transition: opacity 1.5s;
-	 -moz-transition: opacity 1.5s;
-	  -ms-transition: opacity 1.5s;
-	   -o-transition: opacity 1.5s;
-	    transition: opacity 1.5s;}
-
-.carousel-fade .active.left {
-	left:0;
-	opacity:0;
-	z-index:2;
-}
-
-.carousel-fade .next {
-	left:0;
-	opacity:1;
-	z-index:1;
-}
-
-/* === Carousel arrows === */
-
-.carousel-control {
-  color: black;
-  text-shadow: 0 1px 2px rgba(0, 0, 0, 0);
-  filter: alpha(opacity=50);
-  opacity: .5;
-}
-.carousel-control:hover,
-.carousel-control:focus {
-  color: black;
-  text-decoration: none;
-  filter: alpha(opacity=90);
-  outline: none;
-  opacity: .7;
-}
-
-/* Edits side panel behind arrows i.e. gradient panel */
-.carousel-control.left {
-	background-image: none;}
-.carousel-control.right {
-	background-image: none;
-}
-/* === End of carousel arrows === */
-
-/*----------------------------------------------------------------------------- 
-4. BACKGROUND PANELS  
+3. BACKGROUND PANELS  
 -----------------------------------------------------------------------------*/
 
 .aboutme-row {
