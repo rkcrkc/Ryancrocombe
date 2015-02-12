@@ -39,18 +39,32 @@ $font-family-sans-serif: "Raleway", Helvetica, sans-serif;
 	padding: 20px 0;
 }
 
-#bannercontainer {
+#homecontainer {
 	background-color: #FD6B57;
 }
 
-#banner {
+#home {
 	max-width: 650px;
 	margin: 0 auto 0 auto;
 	padding: 0 0 35px 0px;
 	color: white;
 }
 
-#banner .divider {
+#home .col-md-4 {
+	padding: 0px;
+	min-width: 0;
+}
+
+#home .col-md-8 {
+	padding: 0px;
+	min-width: 0;
+}
+
+#home .row {
+	margin: 0;
+}
+
+#home .divider {
 	border-color: white;
 	width: 70%;
 }

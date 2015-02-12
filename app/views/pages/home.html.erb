@@ -1,6 +1,7 @@
-<div id="bannercontainer"><!-- BANNER -->
-  <div id="banner">
+<div id="homecontainer"><!-- HOME BANNER -->
+  <div id="home">
     <div class="row">
+
       <div class="col-md-4">
         <%= image_tag "ryan-hk.JPG", class: "profilepic" %>
       </div>
@@ -9,15 +10,13 @@
         <h1>
           Ryan Crocombe
         </h1>
-
-      <hr class="divider">
-
-      <%= render 'socialmedia' %>
-
+        <hr class="divider">
+        <%= render 'socialmedia' %>
       </div>
+
     </div>
   </div>                  
-</div><!-- /BANNER -->
+</div><!-- /HOME BANNER -->
 
 
 <div class="pagecontainer">
@@ -35,10 +34,10 @@
 <footer><!-- FOOTER -->
 
   <div class="row">
-    <div class="col-md-3 col-sm-6">
-      <a href="#banner"><p>Back to top</p></a>
+    <div class=" col-xs-4">
+      <a href="#home"><p>Back to top</p></a>
     </div>
-    <div class="col-md-3 col-md-offset-6 col-sm-6">
+    <div class="col-xs-8">
       <p style="text-align:right">ryancrocombe.com | 2015</p>
     </div>
   </div>
