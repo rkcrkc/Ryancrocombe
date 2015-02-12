@@ -66,6 +66,10 @@ h5 /* Text for startup industries */{
 	margin: 10px 0 0 0;
 	text-align: center;
 	color: #318CE7;
+
+	@media (max-width: 600px) {
+		font-size: 25px;
+	}
 }
 
 h6 /* Text for aboutme titles */{
@@ -97,4 +101,10 @@ p /* Regular content */{
 	text-align: center;
 	font-weight: 300;
 	font-size: 21px;
+}
+
+footer p {
+	@media (max-width: 600px) {
+		font-size: 12px;
+	}
 }
