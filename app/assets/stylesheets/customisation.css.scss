@@ -46,31 +46,31 @@ $font-family-sans-serif: "Raleway", Helvetica, sans-serif;
 #banner {
 	max-width: 650px;
 	margin: 0 auto 0 auto;
-	padding: 5px 0px 20px 0px;
+	padding: 0 0 35px 0px;
 	color: white;
 }
 
 #banner .divider {
 	border-color: white;
-	width: 80%;
+	width: 70%;
 }
 
 .profilepic {
 	border-radius: 50%;
-	max-height: 200px;
-	max-width: 200px;
-	margin-top: 30px;
+	max-height: 180px;
+	max-width: 180px;
 	border: 2px solid white;
+	margin-top: 30px;
 }
 
 #social /* Social media icons */{
 	width: 180px;
-	margin: 25px auto 10px auto;
+	margin: 20px auto 10px auto;
 	text-decoration: none;
 }
 
 #social img {
-	height: 35px;
+	height: 32px;
 }
 
 #social img:hover {
@@ -107,38 +107,34 @@ $font-family-sans-serif: "Raleway", Helvetica, sans-serif;
 #contact {
 	max-width: 800px;
 	margin: 0 auto;
-	padding-bottom: 50px;
 }
 
 #contactpic {
 	border-radius: 50%;
-	height: 250px;
-	width: 250px;
-	border: 3px solid white;
-	margin: 15px 0 35px 0;
+	height: 210px;
+	width: 210px;
+	border: 2px solid white;
+	margin-top: 20px;
+	margin-bottom: 25px;
 }
 
 #contact #social {
-	margin-top: 45px;
-}
-
-#contact #social img {
-	height: 40px;
+	margin-bottom: 25px;
 }
 
 footer {
-	background: url(.../images/footer_lodyas.png);
+	background: url(footer_lodyas.png);
 	width: 100%;
-	padding: 25px 40px;
+	padding: 20px 40px;
 }
 
 footer p {
 	font-size: 16px;
-	color: #FD6B57;
+	color: silver;
+	margin: 0;
 }
 
-footer a {
-	margin-bottom: 0;
+footer a {	
 }
 
 footer a:hover {
@@ -182,6 +178,34 @@ footer a:hover {
 	height: 240px;
 	width: 240px;
 	margin-bottom: 10px;
+}
+
+.aboutme-pic-wrap {
+	position: relative;
+	margin-bottom: 10px;
+}
+
+.aboutme-pic-description {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	border-radius: 50%;
+	height: 240px;
+	width: 240px;
+	padding-top: 100px;
+	background: rgba(0,0,0,0.3);
+	color: white;
+
+	visibility: hidden;
+	opacity: 0;
+	transition: opacity 0.3s ease-in;
+}
+
+.aboutme-pic-wrap:hover .aboutme-pic-description {
+	visibility: visible;
+	opacity: 1;
 }
 
 
