@@ -48,25 +48,21 @@ $font-family-sans-serif: "Raleway", Helvetica, sans-serif;
 	margin: 0 auto 0 auto;
 	padding: 0 0 35px 0px;
 	color: white;
-}
 
-#home .col-md-4 {
-	padding: 0px;
-	min-width: 0;
-}
+	.col-md-4, .col-md-8 {
+		padding: 0px;
+		min-width: 0;
+	}
 
-#home .col-md-8 {
-	padding: 0px;
-	min-width: 0;
-}
+	.row {
+		margin: 0;
+	}
 
-#home .row {
-	margin: 0;
-}
+	.divider {
+		border-color: white;
+		width: 70%;
+	}
 
-#home .divider {
-	border-color: white;
-	width: 70%;
 }
 
 .profilepic {
@@ -141,20 +137,18 @@ footer {
 	background-color: grey;
 	width: 100%;
 	padding: 20px 40px;
+
+	p {
+		font-size: 16px;
+		color: silver;
+		margin: 0;
+	}
+
+	a:hover {
+		text-decoration: none;
+	}
 }
 
-footer p {
-	font-size: 16px;
-	color: silver;
-	margin: 0;
-}
-
-footer a {	
-}
-
-footer a:hover {
-	text-decoration: none;
-}
 
 /*----------------------------------------------------------------------------- 
 3. BACKGROUND PANELS  
@@ -257,3 +251,5 @@ footer a:hover {
 }
 
 @import 'bootstrap';
+@import "font-awesome-sprockets";
+@import "font-awesome";

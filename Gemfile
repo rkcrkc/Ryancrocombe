@@ -11,6 +11,7 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 1.2'
 gem 'bootstrap-sass'
 gem 'font-awesome-sass'
+gem 'will_paginate', '~> 3.1.0'
 
 group :doc do
   gem 'sdoc', require: false

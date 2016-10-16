@@ -1,9 +1,38 @@
-<%= @post.title %>
-<br>
-<%= @post.content %>
+	<div class="post-show-wrapper skinny-wrapper">
 
-<br>
-<br>
+		<header>
+			<p class="date"><%= @post.created_at.strftime('%A, %d %B %Y') %></p>
+			<h2><%= @post.title %></h2>
+			<hr>
+		</header>
 
-<%= link_to "Edit", edit_post_path(@post) %>
-<%= link_to "Delete", post_path(@post), method: :delete, data: { confirm: "Are you sure you wana delete the post?"} %>
+		<div class="post-content"><%= @post.content %></p>
+
+		<br>
+
+		<%= link_to "Edit", edit_post_path(@post) %>
+		<%= link_to "Delete", post_path(@post), method: :delete, data: { confirm: "Are you sure you wana delete the post?"} %>
+
+		<hr>
+
+		<div class="share-box">
+			<p>Share <em>post name</em><p>
+			<a href="http://twitter.com/share?text=<%= @post.title %> by @ryancrocombe" onclick="javascript:window.open(this.href,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600');return false;">
+				<i class="fa fa-twitter" aria-hidden="true"></i>
+			</a>
+
+			<a href="http://www.facebook.com/sharer.php" onclick="javascript:window.open(this.href,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600');return false;">
+				<i class="fa fa-facebook" aria-hidden="true"></i>
+			</a>
+
+		</div>
+
+	</div>
+
+<!-- 
+
+	<a onclick="javascript:window.open('http://twitter.com/share?text= @post.title %> by @ryancrocombe - &amp;url=< url_for([@post, {only_path: false}]) %>', '_blank', 'width=800, height=500, top=200, left=300;);void(0);">
+
+	<a onclick="javascript:window.open('http://twitter.com/share?text=< @post.title %> by @ryancrocombe - &amp;url=< url_for([@post, {only_path: false}]) %>', '_blank', 'width=800, height=500, top=200, left=300;);void(0);">		
+
+			-->	

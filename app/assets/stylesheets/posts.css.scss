@@ -1,3 +1,158 @@
 // Place all the styles related to the posts controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+$red: #FD6B57;
+$blue: #318CE7;
+$grey: #494949;
+$highlight: #eeeeee;
+
+
+.title {
+	padding: 3em;
+	border-bottom: 1px solid #eeeeee;
+}
+
+#posts-wrapper {
+	padding: 3em 0;
+
+	.post {
+		text-align: center;
+
+		h5 {
+			margin-bottom: 0;
+			font-size: 2em;
+			text-transform: uppercase;
+		}
+
+		p {
+			font-size: 0.9em;
+		}
+
+		a {
+			color: $blue;
+			&:hover {
+				color: #318CA9;
+			}
+		}
+
+		hr {
+			width: 3em;
+			display: block;
+			height: 2px;
+			border: 0;
+			border-top: 2px solid $highlight;
+			margin: 3rem auto;
+		}
+	}
+
+}
+
+.skinny-wrapper {
+	width: 80%;
+	max-width: 760px;
+	margin: 0 auto;
+}
+
+
+// ----- Posts show
+
+.post-show-wrapper {
+	padding: 3em 0;
+	text-align: center;
+
+	header {
+		.date {
+			font-size: .9em;
+			color: $grey;
+			margin: 0;
+		}
+
+		h2 {
+			margin: 0;
+			padding: 0;
+		}
+
+		p {
+
+		}
+	}
+
+	hr {
+		width: 3em;
+		display: block;
+		height: 2px;
+		border: 0;
+		border-top: 2px solid $highlight;
+		margin: 3rem auto;
+	}
+
+	.post-content {
+		
+	}
+
+}
+
+.share-box {
+	p {
+		padding: 0 0 1em 0;
+		margin: 0;
+		font-size: .8em;
+		text-transform: uppercase;
+	}
+
+	i {
+		padding: 1em 1.5em;
+		&:hover {
+			color: $highlight;
+			cursor: pointer;
+		}
+	}
+}
+
+
+
+
+// ----- Pagination
+
+.pagination:before, .pagination:after {
+	content: " ";
+	display: table;
+}
+
+.pagination:after {
+	clear:box;
+}
+
+.pagination {
+	text-align: center;
+	margin: 0 0 3em 0;
+
+	a, .previous_page, .current, .next_page {
+		padding: .75em 1em;
+		margin: 0 .3em;
+		border-radius: .15em;
+		line-height: 20px;
+		text-decoration: none;
+		background: white;
+		color: $red;
+		font-size: 12px;
+		&:hover {
+			background: $red;
+			color: white;			
+		}
+	}
+
+	.current {
+		background: $red;
+		color: white;
+	}
+
+	.disabled {
+		color: #C0C0C0;
+		&:hover {
+			color: #C0C0C0;
+			background: white;		
+		}
+	}
+}
+
