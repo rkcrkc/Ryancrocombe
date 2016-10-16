@@ -6,7 +6,9 @@
 			<hr>
 		</header>
 
-		<div class="post-content"><%= @post.content %></p>
+		<div class="post-content">
+			<%= markdown @post.content %>
+		</div>
 
 		<br>
 

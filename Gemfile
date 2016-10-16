@@ -12,6 +12,9 @@ gem 'jbuilder', '~> 1.2'
 gem 'bootstrap-sass'
 gem 'font-awesome-sass'
 gem 'will_paginate', '~> 3.1.0'
+gem 'pygments.rb', '~> 0.6.3'
+gem 'redcarpet', '~> 3.3', '>= 3.3.4'
+
 
 group :doc do
   gem 'sdoc', require: false
